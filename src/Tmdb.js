@@ -75,12 +75,12 @@ const obj = {
 			switch (type) {
 				case 'movie':
 					info = await basicFetch(
-						`/movie/${movieId}?api_key=${API_KEY}&language=pt-BR`
+						`movie/${movieId}?api_key=${API_KEY}&language=pt-BR`
 					);
 					break;
 				case 'tv':
 					info = await basicFetch(
-						`/tv/${movieId}?api_key=${API_KEY}&language=pt-BR`
+						`tv/${movieId}?api_key=${API_KEY}&language=pt-BR`
 					);
 					break;
 				default:
